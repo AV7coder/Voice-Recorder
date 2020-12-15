@@ -11,7 +11,6 @@ if __name__ == "__main__":
 
     try:
         print("Recognizing...")    
-        query = r.recognize_google(audio, language='en-in') #Using google for voice recognition.
         title = input("Enter the file title: ")
         file = gTTS(query) # makes the file
         file.save(f'{title}.mp3')# saves the file
